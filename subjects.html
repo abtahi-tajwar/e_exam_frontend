@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/3.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/subjects.css">
+    <title>E-Exam | Subjects</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+          <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-center">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Start Exam</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Analytics</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Challange Friend</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn btn-primary text-white" href="#">Login</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="container subject_menu_container">
+            <div class="subject_card"
+                style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(assets/img/subjects/bangla.jpg);"
+            >
+                <h3 class="p-3">Bangla</h3>
+                <a href="" class="btn btn-primary">Take Exam</a>
+            </div>
+            <div class="subject_card"
+                style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(assets/img/subjects/english.jpg);"       
+            >
+                <h3 class="p-3">English</h3>
+                <a href="" class="btn btn-primary">Take Exam</a>
+            </div>
+            <div class="subject_card"
+                style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(assets/img/subjects/general-knowledge.jpg);"       
+            >
+                <h3 class="p-3">General Knowledge</h3>
+                <a href="" class="btn btn-primary">Take Exam</a>
+            </div>
+            <div class="subject_card"
+                style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(assets/img/subjects/international-affairs.jpg);"       
+            >
+                <h3 class="p-3">International Affairs</h3>
+                <a href="" class="btn btn-primary">Take Exam</a>
+            </div>
+            <div class="subject_card"
+                style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(assets/img/subjects/bangladesh_affairs.jpg);"       
+            >
+                <h3 class="p-3">Bangladesh Affairs</h3>
+                <a href="" class="btn btn-primary">Take Exam</a>
+            </div>
+            <div class="subject_card"
+                style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(assets/img/subjects/all.jpg);"       
+            >
+                <h3 class="p-3">All</h3>
+                <a href="" class="btn btn-primary">Take Exam</a>
+            </div>
+        </div>
+      </div>
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/style.js"></script>
+    <script src="assets/vendor/flygeomatry_animation/index.js"></script>
+    <script>
+        makeFlyingGeometry({ 
+            element: document.querySelector(".content"),
+            colors: ["#264653", "#2a9d8f", "#e9c46a", "#f4a261", "#e76f51"],
+            objectCount: 20
+        })
+    </script>
+</body>
+</html>

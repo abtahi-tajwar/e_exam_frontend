@@ -1,0 +1,26 @@
+.content {
+    height: 100vh;
+    width: 100vw;
+    margin-top: calc(var(--navbar-offset) * -1);
+    padding-top: var(--navbar-offset);
+}
+.question {
+    padding: 20px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.answer_section {
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+   
+@media screen and (orientation: portrait) {
+    .question {
+        padding: 20px;
+        border: none;
+    }
+    .question_side_image {
+        display: none;
+    }
+}

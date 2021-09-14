@@ -4,6 +4,8 @@
     --color-extra-light: #eaedf8;
     --text-gray: rgb(78, 78, 78);
     --navbar-offset: 56px;
+    --animation-speed: 0.7s;
+    --animation-timing-function: ease-out;
 }
 canvas {
     z-index: -100
@@ -150,10 +152,36 @@ footer {
     display: flex;
     align-items: center;
 }
-
+.hide {
+    display: none;
+}
+.left-slide-in {
+    animation: left_slidein var(--animation-speed) var(--animation-timing-function);
+    animation-fill-mode: forwards;
+}
+.right-slide-in {
+    animation: right_slidein var(--animation-speed) var(--animation-timing-function);
+    animation-fill-mode: forwards;
+}
    
 @media screen and (orientation: portrait) {
     footer {
         margin-top: 200px;
+    }
+}
+@keyframes left_slidein {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes right_slidein {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(0);
     }
 }

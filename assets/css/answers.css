@@ -1,0 +1,26 @@
+.content {    
+}
+.answers_heading {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answers_heading .question_count {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: var(--color-primary);
+}
+.answers_heading .heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.all_answers {
+    border: 1px solid black;
+    padding: 20px;
+}
+.all_answers .question {
+    margin-bottom: 20px;
+}

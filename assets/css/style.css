@@ -135,6 +135,14 @@ footer {
     height: 1.2em;
     cursor: pointer;
 }
+.correct_answer {
+    color: green;
+    font-weight: 600;
+}
+.wrong_answer {
+    color: red;
+    text-decoration: line-through;
+}
 .radio_input_group span {
     margin-left: 10px;
 }

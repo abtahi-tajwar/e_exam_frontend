@@ -1,0 +1,30 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+    margin-top: calc(var(--navbar-offset) * -1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.challange_confirmation_container {
+    height: 80vh;
+    transform: translateY(calc(var(--navbar-offset) / 2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.challange_confirmation_container .main-content {
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons i {
+    margin-right: 20px;
+    font-size: 2rem;
+    color: black;
+}

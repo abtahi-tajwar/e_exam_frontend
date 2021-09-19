@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/3.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/info_page.css">
-    <title>E-Exam | Start Exam</title>
+    <link rel="stylesheet" href="assets/css/subjects.css">
+    <link rel="stylesheet" href="assets/css/challange_confirmation.css">
+    <title>E-Exam | Subjects</title>
 </head>
 <body>
     <header>
@@ -50,18 +52,47 @@
         </nav>
       </header>
       <div class="content">
-          <div class="cover-img-container">
-              <div class="cover-img">
-                  <img src="assets/img/info.jpg" alt="">
-                  <div class="details">
-                    <p>Subject: Bangla</p>
-                    <p>Total: 10</p>
-                    <p>Marks: 10</p>
-                    <p>Time: 10 min</p>
-                    <a href="exam.html" class="btn btn-primary">Start Exam</a>
-                  </div>
-              </div>
-          </div>
+        <div class="container challange_confirmation_container">
+            <div class="main-content">
+                <h3 class="display-5">Your Challange Is Successfully Created</h3>
+                <div class="form-inline">
+                    <div class="form-group"><input type="text" value="@78g4589" id="challange_id" class="form-control mr-2" readonly></div>
+                    <div class="form-group"><button class="btn btn-info" onclick="copyText()">Copy</button></div>
+                </div>
+
+                <div class="row mt-5">
+                    <b>Share With</b>
+                </div>
+                <div class="row mt-2 social-icons">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="row mt-3">
+                    <span class="mr-2 mb-2"><a href="" class="btn btn-primary">Go To Challange Friend</a></span>
+                    <span><a href="mr-2 mb-2" class="btn btn-primary">Go To Home</a></span>
+                </div>
+            </div>
+        </div>
       </div>
-    </body>
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/style.js"></script>
+    <script src="assets/vendor/flygeomatry_animation/index.js"></script>
+    <script>
+        makeFlyingGeometry({ 
+            element: document.querySelector(".content"),
+            colors: ["#264653", "#2a9d8f", "#e9c46a", "#f4a261", "#e76f51"],
+            objectCount: 20
+        })
+
+        function copyText(){
+            var text = document.getElementById("challange_id");
+            text.select();
+            document.execCommand("copy");
+            alert("Copied the text: " + text.value);
+        }
+    </script>
+</body>
 </html>

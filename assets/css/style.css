@@ -164,6 +164,27 @@ footer {
     animation-fill-mode: forwards;
 }
    
+.link-tab-selected {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    pointer-events: none;
+}
+.link-tab {
+    text-decoration: none !important;
+    color: black;
+    font-weight: 300;
+}
+.link-tab:hover {
+    color: var(--color-primary);
+    border-bottom: none;
+}
+.gray-message {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
+}
 @media screen and (orientation: portrait) {
     footer {
         margin-top: 200px;

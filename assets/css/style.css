@@ -19,15 +19,19 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-.navbar {
+/* .navbar {
     position: relative;
-}
+} */
 nav ul li a.nav-link {
     padding: 7px 30px 7px 30px !important;
     font-size: 0.8rem;
     white-space: nowrap;
 }
-
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s;
+}
 /* footer */
 footer {
     margin-top: 600px
